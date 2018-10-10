@@ -51,11 +51,27 @@ main section.categories-show {
         font-size: 0.8em;
       }
 
+      aside.product_sold-out-badge {
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        text-align: center;
+        padding: 8px;
+        background-color: #ff0000;
+        border-top-left-radius: 4px;
+        border-bottom-right-radius: 20px;
+        color:white;
+        font-size: 1em;
+        opacity: 0.5;
+        height: 35px;
+      }
+
       &:hover {
 
         border-color: #999;
 
-        footer {
+        footer, aside.product_sold-out-badge {
           opacity: 1.0;
         }
       }
