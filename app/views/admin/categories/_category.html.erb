@@ -1,0 +1,20 @@
+<tr>
+  <td>
+    <h4><%= category.name %></h4>
+  </td>
+  <td>
+    <p><%= category.products.length %></p>
+  </td>
+  <td>
+    <%= category.products.sum(:quantity) %>
+  </td>
+  <td>
+    <p>$<% if category.products.sum(:price_cents) != 0 %>
+      <%= (category.products.sum(:price_cents)) / (category.products.length) / 100 %>
+        <% else %>
+          <%= 0 %>
+
+      <% end %>
+    </p>
+  </td>
+</tr>
