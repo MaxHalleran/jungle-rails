@@ -1,8 +1,6 @@
 class SessionsController < ApplicationController
 
   def new
-    puts "------------------------------------------------------------"
-    puts "testing out logging in. Didn't work"
   end
 
   def create
