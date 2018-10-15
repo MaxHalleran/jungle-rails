@@ -132,5 +132,31 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+# Creating Reviews
+
+Review.destroy_all
+
+# Product variables
+
+prod1 = Product.find_by! name:  'Red Bookshelf'
+
+prod1.reviews.create!({
+  user_id: 1,
+  description: 'This was, in fact, a very red bookshelf. Almost too red.',
+  rating: 2
+})
+
+prod1.reviews.create!({
+  user_id: 1,
+  description: 'This was, in fact, a very red bookshelf. Almost too red. TOOOOO red. Could use some blue.',
+  rating: 1
+})
+
+prod1.reviews.create!({
+  user_id: '1',
+  description: 'Yes, I believe you should paint the remainder of your red bookshelves blue.',
+  rating: 1
+})
+
 
 puts "DONE!"

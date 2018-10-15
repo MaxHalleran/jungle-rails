@@ -22,10 +22,25 @@
           <dd><%= @product.quantity %></dd>
           <dt>Price</dt>
           <dd><%= @product.price %></dd>
+          <dt>Rating</dt>
+          <dd>
+            <% if @product.reviews.length > 0 %>
+            <%= 10 * @product.reviews.sum(:rating) / @product.reviews.length / 10.0 %>
+            <% else %>
+            5.0<% end %>/5
+            </dd>
         </dl>
       </div>
     </div>
 
-  </article>
+    <%# The current reviews section, the author will need to be added later %>
 
-</section>
+    <div class="row">
+      <h1>Reviews</h1>
+      <% if current_user %>
+        <%= render 'review_form' %>
+      <% end %>
+      <%= render (@product.reviews).reverse %>
+    </div>
+
+  </article>
