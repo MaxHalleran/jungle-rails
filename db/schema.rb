@@ -67,7 +67,6 @@ ActiveRecord::Schema.define(version: 20181013172151) do
 
   add_index "reviews", ["product_id"], name: "index_reviews_on_product_id", using: :btree
 
-
   create_table "users", force: :cascade do |t|
     t.string   "email"
     t.string   "password_digest"
