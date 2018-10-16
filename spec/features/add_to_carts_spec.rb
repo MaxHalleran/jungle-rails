@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Visitor navigates to a specific products page", type: :feature, js: true do
+RSpec.feature "AddToCarts", type: :feature, js: true do
 
   # SETUP
   before :each do
@@ -31,13 +31,14 @@ RSpec.feature "Visitor navigates to a specific products page", type: :feature, j
 
   end
 
-  scenario "They see the product" do
+  scenario "the user adds an item to their cart" do
+
     visit root_path
 
     page.first('article.product footer button').click
 
-    expect(page).to have_css '.product-detail'
+    save_and_open_screenshot
 
+    expect(page.find('.navbar-right')).to have_text 'My Cart (1)'
   end
-
 end
