@@ -1,0 +1,18 @@
+main section.products-show {
+  .review {
+    background: rgba(245, 245, 245, 0.5);
+  }
+  .review {
+    padding: 5px 0 5px 0;
+  }
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .review-body {
+    margin: 15px 0 15px 0;
+  }
+  .review-footer .btn {
+    margin: 0;
+  }
+}

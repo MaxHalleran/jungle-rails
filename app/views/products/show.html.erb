@@ -40,7 +40,13 @@
       <% if current_user %>
         <%= render 'review_form' %>
       <% end %>
-      <%= render (@product.reviews).reverse %>
+      <div class="panel panel-default col-sm-12">
+        <table class="table table-bordered">
+          <tbody>
+            <%= render (@product.reviews).reverse %>
+          </tbody>
+        </table>
+      </div>
     </div>
 
   </article>

@@ -1,18 +1,17 @@
-<div>
-  <div class="col-sm-6">
-    <%= get_review_user(review.user_id) %>
-  </div>
-  <div class="col-sm-6">
-    <%= review.rating %>
-  </div>
-  <div class="col-12">
-    <%= review.description %>
-  </div>
-  <div>
-    <% if (current_user && same_user?(review.user_id)) %>
-    <% puts "===============================================================" %>
-    <% puts link_to 'Destroy', [review.product, review] %>
-    <%= link_to 'Destroy', [review.product, review], :confirm => 'Are you sure?', :method => :delete %>
-    <% end %>
-  </div>
-</div>
+<tr class="review well">
+  <td>
+    <div class="review-header well well-sm">
+      <p><%= get_review_user(review.user_id) %></p>
+      <p>Rating: <%= review.rating %></p>
+    </div>
+    <div class="review-body well-lg">
+      <%= review.description %>
+    </div>
+    <div class="review-footer well">
+      <p>posted: <%= review.created_at.strftime('%a %d %b %Y') %></p>
+      <% if (current_user && same_user?(review.user_id)) %>
+      <%= link_to 'Destroy', [review.product, review], :confirm => 'Are you sure?', :method => :delete, class: 'btn btn-default' %>
+      <% end %>
+    </div>
+  </td>
+</tr>

@@ -5,6 +5,7 @@
 
 // App
 @import "products";
+@import "reviews";
 
 // Global
 body {
@@ -14,4 +15,16 @@ body {
 // Bootstrap adjustments
 form.button_to {
   display: inline;
+}
+
+#navbar li p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: .9em;
+}
+
+@media screen and (max-width: 992px) {
+  #navbar li p {
+    display: none;
+  }
 }
