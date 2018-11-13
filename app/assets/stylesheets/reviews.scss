@@ -12,6 +12,10 @@ main section.products-show {
   .review-body {
     margin: 15px 0 15px 0;
   }
+  .review-footer {
+    display: flex;
+    justify-content: space-between;
+  }
   .review-footer .btn {
     margin: 0;
   }
