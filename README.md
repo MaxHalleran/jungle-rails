@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 integrating stripe for payment processing. The project includes a user mailer, Sass for styling and PostgreSQL for the database. 
+A mini e-commerce application built with Rails 4.2 integrating stripe for payment processing. The project includes a user mailer, Sass for styling and PostgreSQL for the database.
 
 ## Setup
 
@@ -30,3 +30,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * BootStrap
 
 ## Screenshots
+
+![The home page of Jungle](https://raw.githubusercontent.com/MaxHalleran/jungle-rails/master/public/screenshots/home_page.png "Jungle's home page")
+
+![An item's detailed description](https://raw.githubusercontent.com/MaxHalleran/jungle-rails/master/public/screenshots/item_page.png "A detailed item description")
