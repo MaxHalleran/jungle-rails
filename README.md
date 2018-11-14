@@ -34,3 +34,11 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 ![The home page of Jungle](https://raw.githubusercontent.com/MaxHalleran/jungle-rails/master/public/screenshots/home_page.png "Jungle's home page")
 
 ![An item's detailed description](https://raw.githubusercontent.com/MaxHalleran/jungle-rails/master/public/screenshots/item_page.png "A detailed item description")
+
+![An item's review section](https://raw.githubusercontent.com/MaxHalleran/jungle-rails/master/public/screenshots/reviews.png "An items review section")
+
+![The cart page](https://raw.githubusercontent.com/MaxHalleran/jungle-rails/master/public/screenshots/cart.png "Jungle's cart")
+
+![Stripe's payment module](https://raw.githubusercontent.com/MaxHalleran/jungle-rails/master/public/screenshots/stripe.png "Stripes payment widget")
+
+![The completed orders page](https://raw.githubusercontent.com/MaxHalleran/jungle-rails/master/public/screenshots/processed_order.png "A completed order")
